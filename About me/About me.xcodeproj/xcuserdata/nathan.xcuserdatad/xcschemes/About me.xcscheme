@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D8F8DB4D1A4566FC006C63A9"
-               BuildableName = "About me.app"
+               BuildableName = "Zeman Shao.app"
                BlueprintName = "About me"
                ReferencedContainer = "container:About me.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8F8DB4D1A4566FC006C63A9"
-            BuildableName = "About me.app"
+            BuildableName = "Zeman Shao.app"
             BlueprintName = "About me"
             ReferencedContainer = "container:About me.xcodeproj">
          </BuildableReference>
@@ -72,11 +72,12 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8F8DB4D1A4566FC006C63A9"
-            BuildableName = "About me.app"
+            BuildableName = "Zeman Shao.app"
             BlueprintName = "About me"
             ReferencedContainer = "container:About me.xcodeproj">
          </BuildableReference>
@@ -90,11 +91,12 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8F8DB4D1A4566FC006C63A9"
-            BuildableName = "About me.app"
+            BuildableName = "Zeman Shao.app"
             BlueprintName = "About me"
             ReferencedContainer = "container:About me.xcodeproj">
          </BuildableReference>

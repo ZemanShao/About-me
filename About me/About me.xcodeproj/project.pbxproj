@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFB7AAA6A7B723ECCF8AEA2C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6698F2AB53BDA1EB96490743 /* libPods.a */; };
+		D8281AA41AEDA60A0005D621 /* Work_Video.m4v in Resources */ = {isa = PBXBuildFile; fileRef = D8281AA31AEDA60A0005D621 /* Work_Video.m4v */; };
+		D85EC75E1A5E835300EDE90B /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85EC75D1A5E835300EDE90B /* SkillViewController.swift */; };
+		D85EC7601A5E839E00EDE90B /* SkillCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85EC75F1A5E839E00EDE90B /* SkillCycleView.swift */; };
+		D8A6A2911AEBB119003FD079 /* ExperienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A6A28F1AEBB119003FD079 /* ExperienceTableViewCell.swift */; };
+		D8A6A2921AEBB119003FD079 /* ExperienceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8A6A2901AEBB119003FD079 /* ExperienceTableViewCell.xib */; };
+		D8A6A2951AEBB53C003FD079 /* ExperienceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A6A2941AEBB53C003FD079 /* ExperienceTableViewController.swift */; };
+		D8A6A2C41AEBD5FF003FD079 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A6A2C11AEBD5FF003FD079 /* FBShimmeringLayer.m */; };
+		D8A6A2C51AEBD5FF003FD079 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A6A2C31AEBD5FF003FD079 /* FBShimmeringView.m */; };
+		D8A6A2C71AEBD6A0003FD079 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A6A2C61AEBD6A0003FD079 /* ExperienceViewController.swift */; };
+		D8A6A2DC1AECA30F003FD079 /* ExperienceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A6A2DB1AECA30F003FD079 /* ExperienceDetailViewController.swift */; };
+		D8A6A2DE1AECA604003FD079 /* ExperiencePresentingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A6A2DD1AECA604003FD079 /* ExperiencePresentingAnimator.swift */; };
+		D8E6E5DD1AED8443005086A0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F00E6F1AED7FCC007E56FB /* MediaPlayer.framework */; };
+		D8E6E5E01AED8C73005086A0 /* FultureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6E5DF1AED8C73005086A0 /* FultureViewController.swift */; };
+		D8F00E5A1AECEEEA007E56FB /* ExperienceDismissingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F00E591AECEEEA007E56FB /* ExperienceDismissingAnimator.swift */; };
+		D8F00E5D1AED345C007E56FB /* UIColor+CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F00E5C1AED345C007E56FB /* UIColor+CustomColor.swift */; };
+		D8F00E601AED40BD007E56FB /* ClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F00E5F1AED40BD007E56FB /* ClubViewController.swift */; };
+		D8F00E621AED440C007E56FB /* ClubTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F00E611AED440C007E56FB /* ClubTableViewController.swift */; };
+		D8F00E651AED6703007E56FB /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F00E641AED6703007E56FB /* WorkViewController.swift */; };
+		D8F00E671AED6726007E56FB /* WorkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F00E661AED6726007E56FB /* WorkTableViewController.swift */; };
+		D8F00E6A1AED6B84007E56FB /* CoolTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F00E691AED6B84007E56FB /* CoolTableViewController.swift */; };
+		D8F00E6C1AED6BA4007E56FB /* CoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F00E6B1AED6BA4007E56FB /* CoolViewController.swift */; };
 		D8F8DB541A4566FC006C63A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8DB531A4566FC006C63A9 /* AppDelegate.swift */; };
 		D8F8DB571A4566FC006C63A9 /* About_me.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8F8DB551A4566FC006C63A9 /* About_me.xcdatamodeld */; };
 		D8F8DB5C1A4566FC006C63A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F8DB5A1A4566FC006C63A9 /* Main.storyboard */; };
@@ -27,7 +49,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D8F8DB4E1A4566FC006C63A9 /* About me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "About me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43466331EF7A1BA4339930DB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6698F2AB53BDA1EB96490743 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8281AA31AEDA60A0005D621 /* Work_Video.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Work_Video.m4v; sourceTree = "<group>"; };
+		D85EC75D1A5E835300EDE90B /* SkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
+		D85EC75F1A5E839E00EDE90B /* SkillCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCycleView.swift; sourceTree = "<group>"; };
+		D8A6A28F1AEBB119003FD079 /* ExperienceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewCell.swift; sourceTree = "<group>"; };
+		D8A6A2901AEBB119003FD079 /* ExperienceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExperienceTableViewCell.xib; sourceTree = "<group>"; };
+		D8A6A2941AEBB53C003FD079 /* ExperienceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewController.swift; sourceTree = "<group>"; };
+		D8A6A2BF1AEBD5FF003FD079 /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmering.h; sourceTree = "<group>"; };
+		D8A6A2C01AEBD5FF003FD079 /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringLayer.h; sourceTree = "<group>"; };
+		D8A6A2C11AEBD5FF003FD079 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
+		D8A6A2C21AEBD5FF003FD079 /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
+		D8A6A2C31AEBD5FF003FD079 /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
+		D8A6A2C61AEBD6A0003FD079 /* ExperienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
+		D8A6A2DB1AECA30F003FD079 /* ExperienceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceDetailViewController.swift; sourceTree = "<group>"; };
+		D8A6A2DD1AECA604003FD079 /* ExperiencePresentingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperiencePresentingAnimator.swift; sourceTree = "<group>"; };
+		D8C495551AE0D82500EB81F9 /* About me-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "About me-Bridging-Header.h"; sourceTree = "<group>"; };
+		D8E6E5DB1AED83A3005086A0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D8E6E5DF1AED8C73005086A0 /* FultureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FultureViewController.swift; sourceTree = "<group>"; };
+		D8F00E591AECEEEA007E56FB /* ExperienceDismissingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceDismissingAnimator.swift; sourceTree = "<group>"; };
+		D8F00E5C1AED345C007E56FB /* UIColor+CustomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColor.swift"; sourceTree = "<group>"; };
+		D8F00E5F1AED40BD007E56FB /* ClubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubViewController.swift; sourceTree = "<group>"; };
+		D8F00E611AED440C007E56FB /* ClubTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubTableViewController.swift; sourceTree = "<group>"; };
+		D8F00E641AED6703007E56FB /* WorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
+		D8F00E661AED6726007E56FB /* WorkTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkTableViewController.swift; sourceTree = "<group>"; };
+		D8F00E691AED6B84007E56FB /* CoolTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolTableViewController.swift; sourceTree = "<group>"; };
+		D8F00E6B1AED6BA4007E56FB /* CoolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolViewController.swift; sourceTree = "<group>"; };
+		D8F00E6F1AED7FCC007E56FB /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		D8F8DB4E1A4566FC006C63A9 /* Zeman Shao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zeman Shao.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F8DB521A4566FC006C63A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8F8DB531A4566FC006C63A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8F8DB561A4566FC006C63A9 /* About_me.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = About_me.xcdatamodel; sourceTree = "<group>"; };
@@ -38,6 +88,7 @@
 		D8F8DB6B1A4566FC006C63A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8F8DB6C1A4566FC006C63A9 /* About_meTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About_meTests.swift; sourceTree = "<group>"; };
 		D8F8DB761A47E0EF006C63A9 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		F9705B8465BF2B5621DF736F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8E6E5DD1AED8443005086A0 /* MediaPlayer.framework in Frameworks */,
+				BFB7AAA6A7B723ECCF8AEA2C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,19 +111,140 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C7A88256D87AEBAF84DB8E1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9705B8465BF2B5621DF736F /* Pods.debug.xcconfig */,
+				43466331EF7A1BA4339930DB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D85EC7591A5E82F200EDE90B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D8E6E5DE1AED8C50005086A0 /* Fulture */,
+				D8F00E681AED6853007E56FB /* Cool */,
+				D8F00E631AED66AA007E56FB /* Work */,
+				D8F00E5E1AED408A007E56FB /* Club */,
+				D8F00E5B1AED337B007E56FB /* Util */,
+				D8A6A2BC1AEBD5F7003FD079 /* Lib */,
+				D8A6A2931AEBB520003FD079 /* Experience */,
+				D85EC75C1A5E831700EDE90B /* Skill */,
+				D85EC75A1A5E82FF00EDE90B /* Contact */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D85EC75A1A5E82FF00EDE90B /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				D8F8DB761A47E0EF006C63A9 /* ContactViewController.swift */,
+			);
+			name = Contact;
+			sourceTree = "<group>";
+		};
+		D85EC75C1A5E831700EDE90B /* Skill */ = {
+			isa = PBXGroup;
+			children = (
+				D85EC75D1A5E835300EDE90B /* SkillViewController.swift */,
+				D85EC75F1A5E839E00EDE90B /* SkillCycleView.swift */,
+			);
+			name = Skill;
+			sourceTree = "<group>";
+		};
+		D8A6A2931AEBB520003FD079 /* Experience */ = {
+			isa = PBXGroup;
+			children = (
+				D8A6A28F1AEBB119003FD079 /* ExperienceTableViewCell.swift */,
+				D8A6A2901AEBB119003FD079 /* ExperienceTableViewCell.xib */,
+				D8A6A2941AEBB53C003FD079 /* ExperienceTableViewController.swift */,
+				D8A6A2C61AEBD6A0003FD079 /* ExperienceViewController.swift */,
+				D8A6A2DB1AECA30F003FD079 /* ExperienceDetailViewController.swift */,
+				D8A6A2DD1AECA604003FD079 /* ExperiencePresentingAnimator.swift */,
+				D8F00E591AECEEEA007E56FB /* ExperienceDismissingAnimator.swift */,
+			);
+			name = Experience;
+			sourceTree = "<group>";
+		};
+		D8A6A2BC1AEBD5F7003FD079 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				D8A6A2BD1AEBD5FF003FD079 /* FBShimmering */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		D8A6A2BD1AEBD5FF003FD079 /* FBShimmering */ = {
+			isa = PBXGroup;
+			children = (
+				D8A6A2BF1AEBD5FF003FD079 /* FBShimmering.h */,
+				D8A6A2C01AEBD5FF003FD079 /* FBShimmeringLayer.h */,
+				D8A6A2C11AEBD5FF003FD079 /* FBShimmeringLayer.m */,
+				D8A6A2C21AEBD5FF003FD079 /* FBShimmeringView.h */,
+				D8A6A2C31AEBD5FF003FD079 /* FBShimmeringView.m */,
+			);
+			path = FBShimmering;
+			sourceTree = "<group>";
+		};
+		D8E6E5DE1AED8C50005086A0 /* Fulture */ = {
+			isa = PBXGroup;
+			children = (
+				D8E6E5DF1AED8C73005086A0 /* FultureViewController.swift */,
+			);
+			name = Fulture;
+			sourceTree = "<group>";
+		};
+		D8F00E5B1AED337B007E56FB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				D8F00E5C1AED345C007E56FB /* UIColor+CustomColor.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		D8F00E5E1AED408A007E56FB /* Club */ = {
+			isa = PBXGroup;
+			children = (
+				D8F00E5F1AED40BD007E56FB /* ClubViewController.swift */,
+				D8F00E611AED440C007E56FB /* ClubTableViewController.swift */,
+			);
+			name = Club;
+			sourceTree = "<group>";
+		};
+		D8F00E631AED66AA007E56FB /* Work */ = {
+			isa = PBXGroup;
+			children = (
+				D8F00E641AED6703007E56FB /* WorkViewController.swift */,
+				D8F00E661AED6726007E56FB /* WorkTableViewController.swift */,
+			);
+			name = Work;
+			sourceTree = "<group>";
+		};
+		D8F00E681AED6853007E56FB /* Cool */ = {
+			isa = PBXGroup;
+			children = (
+				D8F00E691AED6B84007E56FB /* CoolTableViewController.swift */,
+				D8F00E6B1AED6BA4007E56FB /* CoolViewController.swift */,
+			);
+			name = Cool;
+			sourceTree = "<group>";
+		};
 		D8F8DB451A4566FC006C63A9 = {
 			isa = PBXGroup;
 			children = (
 				D8F8DB501A4566FC006C63A9 /* About me */,
 				D8F8DB691A4566FC006C63A9 /* About meTests */,
 				D8F8DB4F1A4566FC006C63A9 /* Products */,
+				C7A88256D87AEBAF84DB8E1C /* Pods */,
+				ED5758AD07EA201C83FCBAAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		D8F8DB4F1A4566FC006C63A9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8F8DB4E1A4566FC006C63A9 /* About me.app */,
+				D8F8DB4E1A4566FC006C63A9 /* Zeman Shao.app */,
 				D8F8DB661A4566FC006C63A9 /* About meTests.xctest */,
 			);
 			name = Products;
@@ -79,8 +253,8 @@
 		D8F8DB501A4566FC006C63A9 /* About me */ = {
 			isa = PBXGroup;
 			children = (
+				D85EC7591A5E82F200EDE90B /* ViewControllers */,
 				D8F8DB531A4566FC006C63A9 /* AppDelegate.swift */,
-				D8F8DB761A47E0EF006C63A9 /* ContactViewController.swift */,
 				D8F8DB5A1A4566FC006C63A9 /* Main.storyboard */,
 				D8F8DB5D1A4566FC006C63A9 /* Images.xcassets */,
 				D8F8DB5F1A4566FC006C63A9 /* LaunchScreen.xib */,
@@ -93,6 +267,8 @@
 		D8F8DB511A4566FC006C63A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D8281AA31AEDA60A0005D621 /* Work_Video.m4v */,
+				D8C495551AE0D82500EB81F9 /* About me-Bridging-Header.h */,
 				D8F8DB521A4566FC006C63A9 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -115,6 +291,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ED5758AD07EA201C83FCBAAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8E6E5DB1AED83A3005086A0 /* AVFoundation.framework */,
+				D8F00E6F1AED7FCC007E56FB /* MediaPlayer.framework */,
+				6698F2AB53BDA1EB96490743 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +308,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8F8DB701A4566FC006C63A9 /* Build configuration list for PBXNativeTarget "About me" */;
 			buildPhases = (
+				FDC76240CEBB5D948C286900 /* Check Pods Manifest.lock */,
 				D8F8DB4A1A4566FC006C63A9 /* Sources */,
 				D8F8DB4B1A4566FC006C63A9 /* Frameworks */,
 				D8F8DB4C1A4566FC006C63A9 /* Resources */,
+				46E59E0E02AC487864C48EDD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,7 +320,7 @@
 			);
 			name = "About me";
 			productName = "About me";
-			productReference = D8F8DB4E1A4566FC006C63A9 /* About me.app */;
+			productReference = D8F8DB4E1A4566FC006C63A9 /* Zeman Shao.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D8F8DB651A4566FC006C63A9 /* About meTests */ = {
@@ -198,6 +386,8 @@
 				D8F8DB5C1A4566FC006C63A9 /* Main.storyboard in Resources */,
 				D8F8DB611A4566FC006C63A9 /* LaunchScreen.xib in Resources */,
 				D8F8DB5E1A4566FC006C63A9 /* Images.xcassets in Resources */,
+				D8281AA41AEDA60A0005D621 /* Work_Video.m4v in Resources */,
+				D8A6A2921AEBB119003FD079 /* ExperienceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,14 +400,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		46E59E0E02AC487864C48EDD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDC76240CEBB5D948C286900 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D8F8DB4A1A4566FC006C63A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D8F8DB541A4566FC006C63A9 /* AppDelegate.swift in Sources */,
+				D8A6A2DC1AECA30F003FD079 /* ExperienceDetailViewController.swift in Sources */,
+				D8F00E5D1AED345C007E56FB /* UIColor+CustomColor.swift in Sources */,
 				D8F8DB571A4566FC006C63A9 /* About_me.xcdatamodeld in Sources */,
+				D8A6A2C71AEBD6A0003FD079 /* ExperienceViewController.swift in Sources */,
+				D8F00E621AED440C007E56FB /* ClubTableViewController.swift in Sources */,
+				D8E6E5E01AED8C73005086A0 /* FultureViewController.swift in Sources */,
+				D8A6A2951AEBB53C003FD079 /* ExperienceTableViewController.swift in Sources */,
+				D8F00E651AED6703007E56FB /* WorkViewController.swift in Sources */,
+				D85EC75E1A5E835300EDE90B /* SkillViewController.swift in Sources */,
+				D8F00E5A1AECEEEA007E56FB /* ExperienceDismissingAnimator.swift in Sources */,
+				D8F00E601AED40BD007E56FB /* ClubViewController.swift in Sources */,
+				D8F00E6C1AED6BA4007E56FB /* CoolViewController.swift in Sources */,
+				D8F00E6A1AED6B84007E56FB /* CoolTableViewController.swift in Sources */,
+				D85EC7601A5E839E00EDE90B /* SkillCycleView.swift in Sources */,
 				D8F8DB771A47E0EF006C63A9 /* ContactViewController.swift in Sources */,
+				D8A6A2C41AEBD5FF003FD079 /* FBShimmeringLayer.m in Sources */,
+				D8A6A2C51AEBD5FF003FD079 /* FBShimmeringView.m in Sources */,
+				D8A6A2911AEBB119003FD079 /* ExperienceTableViewCell.swift in Sources */,
+				D8F00E671AED6726007E56FB /* WorkTableViewController.swift in Sources */,
+				D8A6A2DE1AECA604003FD079 /* ExperiencePresentingAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,23 +579,30 @@
 		};
 		D8F8DB711A4566FC006C63A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9705B8465BF2B5621DF736F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "About me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "99ed5dea-60dd-4935-91a4-cf13abfefc4d";
+				PRODUCT_NAME = "Zeman Shao";
+				PROVISIONING_PROFILE = "b0bcd638-0a86-4787-87b6-71be121c04fa";
+				SWIFT_OBJC_BRIDGING_HEADER = "About me/About me-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D8F8DB721A4566FC006C63A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43466331EF7A1BA4339930DB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "About me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "99ed5dea-60dd-4935-91a4-cf13abfefc4d";
+				PRODUCT_NAME = "Zeman Shao";
+				PROVISIONING_PROFILE = "b0bcd638-0a86-4787-87b6-71be121c04fa";
+				SWIFT_OBJC_BRIDGING_HEADER = "About me/About me-Bridging-Header.h";
 			};
 			name = Release;
 		};
