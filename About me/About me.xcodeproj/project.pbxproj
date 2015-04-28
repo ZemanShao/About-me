@@ -11,8 +11,6 @@
 		D8281AA41AEDA60A0005D621 /* Work_Video.m4v in Resources */ = {isa = PBXBuildFile; fileRef = D8281AA31AEDA60A0005D621 /* Work_Video.m4v */; };
 		D85EC75E1A5E835300EDE90B /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85EC75D1A5E835300EDE90B /* SkillViewController.swift */; };
 		D85EC7601A5E839E00EDE90B /* SkillCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85EC75F1A5E839E00EDE90B /* SkillCycleView.swift */; };
-		D8A6A2911AEBB119003FD079 /* ExperienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A6A28F1AEBB119003FD079 /* ExperienceTableViewCell.swift */; };
-		D8A6A2921AEBB119003FD079 /* ExperienceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8A6A2901AEBB119003FD079 /* ExperienceTableViewCell.xib */; };
 		D8A6A2951AEBB53C003FD079 /* ExperienceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A6A2941AEBB53C003FD079 /* ExperienceTableViewController.swift */; };
 		D8A6A2C41AEBD5FF003FD079 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A6A2C11AEBD5FF003FD079 /* FBShimmeringLayer.m */; };
 		D8A6A2C51AEBD5FF003FD079 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A6A2C31AEBD5FF003FD079 /* FBShimmeringView.m */; };
@@ -35,7 +33,6 @@
 		D8F8DB5E1A4566FC006C63A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F8DB5D1A4566FC006C63A9 /* Images.xcassets */; };
 		D8F8DB611A4566FC006C63A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8F8DB5F1A4566FC006C63A9 /* LaunchScreen.xib */; };
 		D8F8DB6D1A4566FC006C63A9 /* About_meTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8DB6C1A4566FC006C63A9 /* About_meTests.swift */; };
-		D8F8DB771A47E0EF006C63A9 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8DB761A47E0EF006C63A9 /* ContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +51,6 @@
 		D8281AA31AEDA60A0005D621 /* Work_Video.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Work_Video.m4v; sourceTree = "<group>"; };
 		D85EC75D1A5E835300EDE90B /* SkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
 		D85EC75F1A5E839E00EDE90B /* SkillCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCycleView.swift; sourceTree = "<group>"; };
-		D8A6A28F1AEBB119003FD079 /* ExperienceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewCell.swift; sourceTree = "<group>"; };
-		D8A6A2901AEBB119003FD079 /* ExperienceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExperienceTableViewCell.xib; sourceTree = "<group>"; };
 		D8A6A2941AEBB53C003FD079 /* ExperienceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewController.swift; sourceTree = "<group>"; };
 		D8A6A2BF1AEBD5FF003FD079 /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmering.h; sourceTree = "<group>"; };
 		D8A6A2C01AEBD5FF003FD079 /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringLayer.h; sourceTree = "<group>"; };
@@ -87,7 +82,6 @@
 		D8F8DB661A4566FC006C63A9 /* About meTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "About meTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F8DB6B1A4566FC006C63A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8F8DB6C1A4566FC006C63A9 /* About_meTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About_meTests.swift; sourceTree = "<group>"; };
-		D8F8DB761A47E0EF006C63A9 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		F9705B8465BF2B5621DF736F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,17 +125,8 @@
 				D8A6A2BC1AEBD5F7003FD079 /* Lib */,
 				D8A6A2931AEBB520003FD079 /* Experience */,
 				D85EC75C1A5E831700EDE90B /* Skill */,
-				D85EC75A1A5E82FF00EDE90B /* Contact */,
 			);
 			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		D85EC75A1A5E82FF00EDE90B /* Contact */ = {
-			isa = PBXGroup;
-			children = (
-				D8F8DB761A47E0EF006C63A9 /* ContactViewController.swift */,
-			);
-			name = Contact;
 			sourceTree = "<group>";
 		};
 		D85EC75C1A5E831700EDE90B /* Skill */ = {
@@ -156,8 +141,6 @@
 		D8A6A2931AEBB520003FD079 /* Experience */ = {
 			isa = PBXGroup;
 			children = (
-				D8A6A28F1AEBB119003FD079 /* ExperienceTableViewCell.swift */,
-				D8A6A2901AEBB119003FD079 /* ExperienceTableViewCell.xib */,
 				D8A6A2941AEBB53C003FD079 /* ExperienceTableViewController.swift */,
 				D8A6A2C61AEBD6A0003FD079 /* ExperienceViewController.swift */,
 				D8A6A2DB1AECA30F003FD079 /* ExperienceDetailViewController.swift */,
@@ -387,7 +370,6 @@
 				D8F8DB611A4566FC006C63A9 /* LaunchScreen.xib in Resources */,
 				D8F8DB5E1A4566FC006C63A9 /* Images.xcassets in Resources */,
 				D8281AA41AEDA60A0005D621 /* Work_Video.m4v in Resources */,
-				D8A6A2921AEBB119003FD079 /* ExperienceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,10 +435,8 @@
 				D8F00E6C1AED6BA4007E56FB /* CoolViewController.swift in Sources */,
 				D8F00E6A1AED6B84007E56FB /* CoolTableViewController.swift in Sources */,
 				D85EC7601A5E839E00EDE90B /* SkillCycleView.swift in Sources */,
-				D8F8DB771A47E0EF006C63A9 /* ContactViewController.swift in Sources */,
 				D8A6A2C41AEBD5FF003FD079 /* FBShimmeringLayer.m in Sources */,
 				D8A6A2C51AEBD5FF003FD079 /* FBShimmeringView.m in Sources */,
-				D8A6A2911AEBB119003FD079 /* ExperienceTableViewCell.swift in Sources */,
 				D8F00E671AED6726007E56FB /* WorkTableViewController.swift in Sources */,
 				D8A6A2DE1AECA604003FD079 /* ExperiencePresentingAnimator.swift in Sources */,
 			);
