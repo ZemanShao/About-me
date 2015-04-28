@@ -12,41 +12,8 @@ class ExperienceTableViewController: UITableViewController,UIViewControllerTrans
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.configureTableView();
 
     }
-    
-    // MARK: - UI Configure
-    
-    func configureTableView(){
-    }
-    
-    
-    // MARK: - Table View Data Source
-//
-//    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        
-//        return 1
-//    }
-//
-//    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//
-//
-//        return 10
-//    }
-//    
-//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        let objects : NSArray = NSBundle.mainBundle().loadNibNamed("ExperienceTableViewCell", owner: self, options: nil)
-//        
-//        var cell  = objects.firstObject as ExperienceTableViewCell
-//        cell.selectionStyle = UITableViewCellSelectionStyle.None
-//        return cell
-//    }
-//    
-//    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-//        return 90;
-//    }
-    
     
     // MARK: -  Table View Delegate
     
@@ -55,7 +22,7 @@ class ExperienceTableViewController: UITableViewController,UIViewControllerTrans
             let vc = self.storyboard?.instantiateViewControllerWithIdentifier("ClubViewController") as ClubViewController
             vc.transitioningDelegate = self
             vc.modalPresentationStyle = UIModalPresentationStyle.Custom
-            self.parentViewController!.presentViewController(vc, animated: true, completion: nil)
+            self.parentViewController!.presentViewController(vc, animated: true, completion: {println("hh")})
         }
         else if(indexPath.row == 1){
             let vc = SkillViewController()
