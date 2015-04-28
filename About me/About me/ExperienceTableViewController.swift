@@ -15,47 +15,37 @@ class ExperienceTableViewController: UITableViewController,UIViewControllerTrans
 
     }
     
-    // MARK: -  Table View Delegate
-    
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if(indexPath.row == 0){
-            let vc = self.storyboard?.instantiateViewControllerWithIdentifier("ClubViewController") as ClubViewController
-            vc.transitioningDelegate = self
-            vc.modalPresentationStyle = UIModalPresentationStyle.Custom
-            self.presentViewController(vc, animated: true, completion: nil)
-        }
-        else if(indexPath.row == 1){
-            let vc = SkillViewController()
-            vc.transitioningDelegate = self
-            vc.modalPresentationStyle = UIModalPresentationStyle.Custom
-            self.presentViewController(vc, animated: true, completion: nil)
-        }
-        else if(indexPath.row == 2){
-            let vc = self.storyboard?.instantiateViewControllerWithIdentifier("WorkViewController") as WorkViewController
-            vc.transitioningDelegate = self
-            vc.modalPresentationStyle = UIModalPresentationStyle.Custom
-            self.presentViewController(vc, animated: true, completion: nil)
-        }
-        else if(indexPath.row == 3){
-            let vc = self.storyboard?.instantiateViewControllerWithIdentifier("CoolViewController") as CoolViewController
-            vc.transitioningDelegate = self
-            vc.modalPresentationStyle = UIModalPresentationStyle.Custom
-            self.presentViewController(vc, animated: true, completion: nil)
-        }
-        else if(indexPath.row == 4){
-            var vc = FultureViewController()
-            vc.transitioningDelegate = self;
-            vc.modalPresentationStyle = UIModalPresentationStyle.Custom
-            self.presentViewController(vc, animated: true, completion: nil)
-        }
-        else{
-            var vc = ExperienceDetailViewController()
-            vc.transitioningDelegate = self;
-            vc.modalPresentationStyle = UIModalPresentationStyle.Custom
-            self.presentViewController(vc, animated: true, completion: nil)
-
-        }
+    @IBAction func firstRowButtonPressed(sender: AnyObject) {
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("ClubViewController") as ClubViewController
+        vc.transitioningDelegate = self
+        vc.modalPresentationStyle = UIModalPresentationStyle.Custom
+        self.presentViewController(vc, animated: true, completion: nil)
     }
+    @IBAction func secondRowButtonPressed(sender: AnyObject) {
+        let vc = SkillViewController()
+        vc.transitioningDelegate = self
+        vc.modalPresentationStyle = UIModalPresentationStyle.Custom
+        self.presentViewController(vc, animated: true, completion: nil)
+    }
+    @IBAction func thirdRowButtonPressed(sender: AnyObject) {
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("WorkViewController") as WorkViewController
+        vc.transitioningDelegate = self
+        vc.modalPresentationStyle = UIModalPresentationStyle.Custom
+        self.presentViewController(vc, animated: true, completion: nil)
+    }
+    @IBAction func fourthRowButtonPressed(sender: AnyObject) {
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("CoolViewController") as CoolViewController
+        vc.transitioningDelegate = self
+        vc.modalPresentationStyle = UIModalPresentationStyle.Custom
+        self.presentViewController(vc, animated: true, completion: nil)
+    }
+    @IBAction func fifthRowButtonPressed(sender: AnyObject) {
+        var vc = FultureViewController()
+        vc.transitioningDelegate = self;
+        vc.modalPresentationStyle = UIModalPresentationStyle.Custom
+        self.presentViewController(vc, animated: true, completion: nil)
+    }
+
     
     // MARK: - Transitioning Delegate
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
