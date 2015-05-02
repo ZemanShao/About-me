@@ -20,6 +20,7 @@ class WorkTableViewController: UITableViewController {
     var moviePlayer : MPMoviePlayerViewController?
     
     override func viewDidLoad() {
+//        NSTimer.scheduledTimerWithTimeInterval(0.4, target: self, selector: Selector("configurePlayer"), userInfo: nil, repeats: false)
         self.configurePlayer()
         self.configureIntro()
     }

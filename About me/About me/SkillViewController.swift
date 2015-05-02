@@ -46,7 +46,13 @@ class SkillViewController: ExperienceDetailViewController {
     func configureAvatar(){
         let avatarView = UIImageView(image: UIImage(named: "Skill_Avatar"))
         avatarView.frame = CGRectMake(0, 0, 80, 80)
-        avatarView.center = CGPointMake((UIScreen.mainScreen().bounds.width-50)/2, (UIScreen.mainScreen().bounds.height-200)/3)
+        if CGSizeEqualToSize(UIScreen.mainScreen().bounds.size, CGSizeMake(320, 480)){
+            avatarView.center = CGPointMake((UIScreen.mainScreen().bounds.width-50)/2, (UIScreen.mainScreen().bounds.height-200)/2.5)
+        }
+        else{
+            avatarView.center = CGPointMake((UIScreen.mainScreen().bounds.width-50)/2, (UIScreen.mainScreen().bounds.height-200)/3)
+        }
+
         self.view.addSubview(avatarView)
     }
     
@@ -55,7 +61,13 @@ class SkillViewController: ExperienceDetailViewController {
         bluePoint.backgroundColor = UIColor.customBlueColor()
         bluePoint.layer.cornerRadius = bluePoint.frame.width/2
         bluePoint.clipsToBounds = true
-        bluePoint.center = CGPointMake((UIScreen.mainScreen().bounds.width-50)/2 - 100, (UIScreen.mainScreen().bounds.height-200)/1.5)
+        if CGSizeEqualToSize(UIScreen.mainScreen().bounds.size, CGSizeMake(320, 480)){
+            bluePoint.center = CGPointMake((UIScreen.mainScreen().bounds.width-50)/2 - 100, (UIScreen.mainScreen().bounds.height-200)/1.2)
+        }
+        else{
+            bluePoint.center = CGPointMake((UIScreen.mainScreen().bounds.width-50)/2 - 100, (UIScreen.mainScreen().bounds.height-200)/1.5)
+        }
+        
         self.view.addSubview(bluePoint)
         
         let blueLabel = UILabel(frame: CGRectMake(bluePoint.frame.origin.x + 25, bluePoint.frame.origin.y-3, 0, 0))
@@ -144,7 +156,13 @@ class SkillViewController: ExperienceDetailViewController {
     func addCircleView(r : CGFloat, color : UIColor, width : CGFloat, toEnd : CGFloat){
         let circleView  = SkillCycleView(frame: CGRectMake(0, 0, r, r), color: color, width: width)
         circleView.toEnd = toEnd
-        circleView.center = CGPointMake((UIScreen.mainScreen().bounds.width-50)/2, (UIScreen.mainScreen().bounds.height-200)/3)
+        if CGSizeEqualToSize(UIScreen.mainScreen().bounds.size, CGSizeMake(320, 480)){
+            circleView.center = CGPointMake((UIScreen.mainScreen().bounds.width-50)/2, (UIScreen.mainScreen().bounds.height-200)/2.5)
+        }
+        else{
+            circleView.center = CGPointMake((UIScreen.mainScreen().bounds.width-50)/2, (UIScreen.mainScreen().bounds.height-200)/3)
+        }
+        
         self.circleViewArray.addObject(circleView)
     }
 

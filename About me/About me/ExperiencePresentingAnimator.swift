@@ -22,7 +22,13 @@ class ExperiencePresentingAnimator: NSObject,UIViewControllerAnimatedTransitioni
         dimmingView.addGestureRecognizer(recognizer)
         
         let toView = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!.view
-        toView.frame = CGRectMake(0, 0, CGRectGetWidth(transitionContext.containerView().bounds)-50,CGRectGetHeight(transitionContext.containerView().bounds) - 200)
+        if CGSizeEqualToSize(UIScreen.mainScreen().bounds.size, CGSizeMake(320, 480)){
+            toView.frame = CGRectMake(0, 0, CGRectGetWidth(transitionContext.containerView().bounds)-50,CGRectGetHeight(transitionContext.containerView().bounds) - 100)
+        }
+        else{
+            toView.frame = CGRectMake(0, 0, CGRectGetWidth(transitionContext.containerView().bounds)-50,CGRectGetHeight(transitionContext.containerView().bounds) - 200)
+        }
+
         toView.center = CGPointMake(-transitionContext.containerView().center.x, transitionContext.containerView().center.y)
         
         transitionContext.containerView().addSubview(toView)

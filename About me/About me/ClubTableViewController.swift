@@ -91,12 +91,14 @@ class ClubTableViewController: UITableViewController {
     func shrinkIcon(){
         let shrinkAnimation = POPSpringAnimation(propertyNamed: kPOPLayerSize)
         shrinkAnimation.toValue = NSValue(CGSize:CGSizeMake(4*unitWidthSmall, 4*unitWidthSmall))
+        shrinkAnimation.removedOnCompletion = true
 //        shrinkAnimation.duration = 2.0
 //        shrinkAnimation.springBounciness = 4
 //        shrinkAnimation.springSpeed = 0
         
         let opacityAnimation = POPSpringAnimation(propertyNamed: kPOPLayerOpacity)
         opacityAnimation.toValue = 1.0
+        opacityAnimation.removedOnCompletion = true
 //        opacityAnimation.duration = 2.0
 //        opacityAnimation.springBounciness = 4
 //        opacityAnimation.springSpeed = 0
@@ -109,6 +111,7 @@ class ClubTableViewController: UITableViewController {
             let jFloat = CGFloat(imageView.tag%4)
             let positionAnimation = POPSpringAnimation(propertyNamed: kPOPLayerPosition)
             positionAnimation.toValue = NSValue(CGPoint: CGPointMake((1+5*iFloat)*unitWidthSmall+25, (1+5*jFloat)*unitWidthSmall+25))
+            positionAnimation.removedOnCompletion = true
 //            positionAnimation.duration = 2.0
 //            positionAnimation.springBounciness = 0
 //            positionAnimation.springSpeed = 0
@@ -125,6 +128,7 @@ class ClubTableViewController: UITableViewController {
         opacityAnimation.toValue = 1.0
         opacityAnimation.springBounciness = 4
         opacityAnimation.springSpeed = 0
+        opacityAnimation.removedOnCompletion = true
         self.describeLabel.layer.pop_addAnimation(opacityAnimation, forKey: "opacityAnimation")
     }
     
