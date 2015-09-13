@@ -11,4 +11,4 @@
 - // Change local image file to image downloaded from the Internet
 
 ## Download
-－ [http://fir.im/47dc](http://fir.im/47dc)
+[http://fir.im/47dc](http://fir.im/47dc)
