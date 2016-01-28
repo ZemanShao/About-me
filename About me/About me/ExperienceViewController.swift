@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ExperienceViewController: UIViewController {
+class ExperienceViewController: UIViewController{
 
     @IBOutlet weak var nameLabelView: FBShimmeringView!
     
@@ -31,7 +31,11 @@ class ExperienceViewController: UIViewController {
         self.nameLabelView.shimmeringSpeed = 80
         self.nameLabelView.shimmeringPauseDuration = 1.5
         
-        var nameLabel = UILabel()
+        self.nameLabelView.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: "nameLabelDidPressed"))
+        
+        
+        
+        let nameLabel = UILabel()
         nameLabel.text = "Zeman Shao"
         nameLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 32)
         nameLabel.sizeToFit()
@@ -53,6 +57,10 @@ class ExperienceViewController: UIViewController {
         self.headerImageView.addGestureRecognizer(recognizer)
     }
     
+    func nameLabelDidPressed(){
+        print("Name Label Did Pressed")
+    }
+    
     @IBAction func headerImageViewDidPressed(){
         print("Tap!!!")
 
@@ -62,5 +70,6 @@ class ExperienceViewController: UIViewController {
     override func prefersStatusBarHidden() -> Bool {
         return true;
     }
+    
     
 }
