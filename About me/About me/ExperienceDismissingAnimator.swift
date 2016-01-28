@@ -15,15 +15,15 @@ class ExperienceDismissingAnimator: NSObject, UIViewControllerAnimatedTransition
         
         let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!
         
-        let subviews = transitionContext.containerView().subviews as NSArray
-        let dimmingView = subviews.firstObject as UIView
+        let subviews = transitionContext.containerView()!.subviews as NSArray
+        let dimmingView = subviews.firstObject as! UIView
         
         let opacityAnimation = POPBasicAnimation(propertyNamed: kPOPLayerOpacity)
         opacityAnimation.toValue = 0
         
         
         let positionAnimation = POPSpringAnimation(propertyNamed: kPOPLayerPositionX)
-        positionAnimation.toValue = transitionContext.containerView().center.x*4
+        positionAnimation.toValue = transitionContext.containerView()!.center.x*4
         positionAnimation.springBounciness = 10
         positionAnimation.completionBlock = {(anim : POPAnimation?,finished : Bool) in transitionContext.completeTransition(true)}
         
@@ -37,7 +37,7 @@ class ExperienceDismissingAnimator: NSObject, UIViewControllerAnimatedTransition
         
     }
     
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return 0.5
     }
 }

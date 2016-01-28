@@ -31,4 +31,8 @@ class FultureViewController: ExperienceDetailViewController {
 
     }
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true;
+    }
+    
 }

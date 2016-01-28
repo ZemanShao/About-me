@@ -54,7 +54,7 @@ class ExperienceViewController: UIViewController {
     }
     
     @IBAction func headerImageViewDidPressed(){
-        println("Tap!!!")
+        print("Tap!!!")
 
     }
     

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D8F8DB4D1A4566FC006C63A9"
-               BuildableName = "Zeman Shao.app"
+               BuildableName = "Zeman.app"
                BlueprintName = "About me"
                ReferencedContainer = "container:About me.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8F8DB4D1A4566FC006C63A9"
-            BuildableName = "Zeman Shao.app"
+            BuildableName = "Zeman.app"
             BlueprintName = "About me"
             ReferencedContainer = "container:About me.xcodeproj">
          </BuildableReference>
@@ -77,7 +77,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8F8DB4D1A4566FC006C63A9"
-            BuildableName = "Zeman Shao.app"
+            BuildableName = "Zeman.app"
             BlueprintName = "About me"
             ReferencedContainer = "container:About me.xcodeproj">
          </BuildableReference>
@@ -96,7 +96,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8F8DB4D1A4566FC006C63A9"
-            BuildableName = "Zeman Shao.app"
+            BuildableName = "Zeman.app"
             BlueprintName = "About me"
             ReferencedContainer = "container:About me.xcodeproj">
          </BuildableReference>

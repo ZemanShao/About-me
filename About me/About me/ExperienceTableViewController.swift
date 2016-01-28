@@ -16,7 +16,7 @@ class ExperienceTableViewController: UITableViewController,UIViewControllerTrans
     }
     
     @IBAction func firstRowButtonPressed(sender: AnyObject) {
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("ClubViewController") as ClubViewController
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("ClubViewController") as! ClubViewController
         vc.transitioningDelegate = self
         vc.modalPresentationStyle = UIModalPresentationStyle.Custom
         self.presentViewController(vc, animated: true, completion: nil)
@@ -28,13 +28,13 @@ class ExperienceTableViewController: UITableViewController,UIViewControllerTrans
         self.presentViewController(vc, animated: true, completion: nil)
     }
     @IBAction func thirdRowButtonPressed(sender: AnyObject) {
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("WorkViewController") as WorkViewController
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("WorkViewController") as! WorkViewController
         vc.transitioningDelegate = self
         vc.modalPresentationStyle = UIModalPresentationStyle.Custom
         self.presentViewController(vc, animated: true, completion: nil)
     }
     @IBAction func fourthRowButtonPressed(sender: AnyObject) {
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("CoolViewController") as CoolViewController
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("CoolViewController")as! CoolViewController
         vc.transitioningDelegate = self
         vc.modalPresentationStyle = UIModalPresentationStyle.Custom
         self.presentViewController(vc, animated: true, completion: nil)

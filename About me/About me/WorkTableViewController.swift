@@ -42,6 +42,7 @@ class WorkTableViewController: UITableViewController {
     
     func configurePlayer(){
 //        moviePlayer = MPMoviePlayerViewController(contentURL: NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("Work_Video", ofType:"mp4")!) )
+        
         moviePlayer = MPMoviePlayerViewController(contentURL: NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("Work_Video", ofType:"m4v")!) )
         moviePlayer?.moviePlayer.controlStyle = MPMovieControlStyle.None
         moviePlayer?.moviePlayer.repeatMode = .One
@@ -63,5 +64,8 @@ class WorkTableViewController: UITableViewController {
 
     }
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true;
+    }
 
 }

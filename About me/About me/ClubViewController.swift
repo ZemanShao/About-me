@@ -9,5 +9,7 @@
 import UIKit
 
 class ClubViewController: ExperienceDetailViewController {
-
+    override func prefersStatusBarHidden() -> Bool {
+        return true;
+    }
 }

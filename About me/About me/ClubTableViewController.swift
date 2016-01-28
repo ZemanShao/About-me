@@ -56,7 +56,7 @@ class ClubTableViewController: UITableViewController {
         
         for(var i = 0; i < 4 ; i++){
             for(var j = 0; j < 4; j++){
-                let imageView = self.iconImageViewArray.objectAtIndex(4*i+j) as UIImageView
+                let imageView = self.iconImageViewArray.objectAtIndex(4*i+j) as! UIImageView
                 let iFloat = CGFloat(i)
                 let jFloat = CGFloat(j)
                 imageView.frame = CGRectMake((0.5+5*iFloat)*unitWidthLarge-25, (0.5+5*jFloat)*unitWidthLarge-100, 4*unitWidthLarge, 4*unitWidthLarge)
@@ -106,7 +106,7 @@ class ClubTableViewController: UITableViewController {
 
         
         for imageView in iconImageViewArray{
-            let iconView = imageView as UIImageView
+            let iconView = imageView as! UIImageView
             let iFloat = CGFloat(imageView.tag/4)
             let jFloat = CGFloat(imageView.tag%4)
             let positionAnimation = POPSpringAnimation(propertyNamed: kPOPLayerPosition)
@@ -132,6 +132,9 @@ class ClubTableViewController: UITableViewController {
         self.describeLabel.layer.pop_addAnimation(opacityAnimation, forKey: "opacityAnimation")
     }
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true;
+    }
     
     
 }

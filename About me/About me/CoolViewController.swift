@@ -9,5 +9,7 @@
 import UIKit
 
 class CoolViewController: ExperienceDetailViewController {
-
+    override func prefersStatusBarHidden() -> Bool {
+        return true;
+    }
 }

@@ -32,18 +32,7 @@
 		D8F8DB5C1A4566FC006C63A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F8DB5A1A4566FC006C63A9 /* Main.storyboard */; };
 		D8F8DB5E1A4566FC006C63A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F8DB5D1A4566FC006C63A9 /* Images.xcassets */; };
 		D8F8DB611A4566FC006C63A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8F8DB5F1A4566FC006C63A9 /* LaunchScreen.xib */; };
-		D8F8DB6D1A4566FC006C63A9 /* About_meTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8DB6C1A4566FC006C63A9 /* About_meTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D8F8DB671A4566FC006C63A9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D8F8DB461A4566FC006C63A9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D8F8DB4D1A4566FC006C63A9;
-			remoteInfo = "About me";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		43466331EF7A1BA4339930DB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,14 +61,13 @@
 		D8F00E691AED6B84007E56FB /* CoolTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolTableViewController.swift; sourceTree = "<group>"; };
 		D8F00E6B1AED6BA4007E56FB /* CoolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolViewController.swift; sourceTree = "<group>"; };
 		D8F00E6F1AED7FCC007E56FB /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		D8F8DB4E1A4566FC006C63A9 /* Zeman Shao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zeman Shao.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F8DB4E1A4566FC006C63A9 /* Zeman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zeman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F8DB521A4566FC006C63A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8F8DB531A4566FC006C63A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8F8DB561A4566FC006C63A9 /* About_me.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = About_me.xcdatamodel; sourceTree = "<group>"; };
 		D8F8DB5B1A4566FC006C63A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8F8DB5D1A4566FC006C63A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D8F8DB601A4566FC006C63A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D8F8DB661A4566FC006C63A9 /* About meTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "About meTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F8DB6B1A4566FC006C63A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8F8DB6C1A4566FC006C63A9 /* About_meTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About_meTests.swift; sourceTree = "<group>"; };
 		F9705B8465BF2B5621DF736F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,13 +80,6 @@
 			files = (
 				D8E6E5DD1AED8443005086A0 /* MediaPlayer.framework in Frameworks */,
 				BFB7AAA6A7B723ECCF8AEA2C /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8F8DB631A4566FC006C63A9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,8 +208,7 @@
 		D8F8DB4F1A4566FC006C63A9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8F8DB4E1A4566FC006C63A9 /* Zeman Shao.app */,
-				D8F8DB661A4566FC006C63A9 /* About meTests.xctest */,
+				D8F8DB4E1A4566FC006C63A9 /* Zeman.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -303,26 +283,8 @@
 			);
 			name = "About me";
 			productName = "About me";
-			productReference = D8F8DB4E1A4566FC006C63A9 /* Zeman Shao.app */;
+			productReference = D8F8DB4E1A4566FC006C63A9 /* Zeman.app */;
 			productType = "com.apple.product-type.application";
-		};
-		D8F8DB651A4566FC006C63A9 /* About meTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D8F8DB731A4566FC006C63A9 /* Build configuration list for PBXNativeTarget "About meTests" */;
-			buildPhases = (
-				D8F8DB621A4566FC006C63A9 /* Sources */,
-				D8F8DB631A4566FC006C63A9 /* Frameworks */,
-				D8F8DB641A4566FC006C63A9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D8F8DB681A4566FC006C63A9 /* PBXTargetDependency */,
-			);
-			name = "About meTests";
-			productName = "About meTests";
-			productReference = D8F8DB661A4566FC006C63A9 /* About meTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -330,15 +292,12 @@
 		D8F8DB461A4566FC006C63A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = TAC;
 				TargetAttributes = {
 					D8F8DB4D1A4566FC006C63A9 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					D8F8DB651A4566FC006C63A9 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = D8F8DB4D1A4566FC006C63A9;
 					};
 				};
 			};
@@ -356,7 +315,6 @@
 			projectRoot = "";
 			targets = (
 				D8F8DB4D1A4566FC006C63A9 /* About me */,
-				D8F8DB651A4566FC006C63A9 /* About meTests */,
 			);
 		};
 /* End PBXProject section */
@@ -370,13 +328,6 @@
 				D8F8DB611A4566FC006C63A9 /* LaunchScreen.xib in Resources */,
 				D8F8DB5E1A4566FC006C63A9 /* Images.xcassets in Resources */,
 				D8281AA41AEDA60A0005D621 /* Work_Video.m4v in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8F8DB641A4566FC006C63A9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,23 +393,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8F8DB621A4566FC006C63A9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D8F8DB6D1A4566FC006C63A9 /* About_meTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D8F8DB681A4566FC006C63A9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D8F8DB4D1A4566FC006C63A9 /* About me */;
-			targetProxy = D8F8DB671A4566FC006C63A9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D8F8DB5A1A4566FC006C63A9 /* Main.storyboard */ = {
@@ -563,10 +498,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hongming Zhu (H5SJ56Z88P)";
 				INFOPLIST_FILE = "About me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "Zeman Shao";
-				PROVISIONING_PROFILE = "b0bcd638-0a86-4787-87b6-71be121c04fa";
+				PRODUCT_NAME = Zeman;
+				PROVISIONING_PROFILE = "3cb3f1cf-1de0-4661-9be3-c60381681ed9";
 				SWIFT_OBJC_BRIDGING_HEADER = "About me/About me-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -578,45 +514,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hongming Zhu (H5SJ56Z88P)";
 				INFOPLIST_FILE = "About me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "Zeman Shao";
-				PROVISIONING_PROFILE = "b0bcd638-0a86-4787-87b6-71be121c04fa";
+				PRODUCT_NAME = Zeman;
+				PROVISIONING_PROFILE = "3cb3f1cf-1de0-4661-9be3-c60381681ed9";
 				SWIFT_OBJC_BRIDGING_HEADER = "About me/About me-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		D8F8DB741A4566FC006C63A9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "About meTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/About me.app/About me";
-			};
-			name = Debug;
-		};
-		D8F8DB751A4566FC006C63A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "About meTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/About me.app/About me";
 			};
 			name = Release;
 		};
@@ -637,15 +540,6 @@
 			buildConfigurations = (
 				D8F8DB711A4566FC006C63A9 /* Debug */,
 				D8F8DB721A4566FC006C63A9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D8F8DB731A4566FC006C63A9 /* Build configuration list for PBXNativeTarget "About meTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D8F8DB741A4566FC006C63A9 /* Debug */,
-				D8F8DB751A4566FC006C63A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

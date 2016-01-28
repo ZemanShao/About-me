@@ -27,7 +27,7 @@ class SkillViewController: ExperienceDetailViewController {
         self.configureCircleView()
         
         for view in self.circleViewArray{
-            let circleView = view as SkillCycleView
+            let circleView = view as! SkillCycleView
             circleView.move(0, animated: false)
         }
     }
@@ -36,7 +36,7 @@ class SkillViewController: ExperienceDetailViewController {
         super.viewDidAppear(animated)
         
         for view in self.circleViewArray{
-            let circleView = view as SkillCycleView
+            let circleView = view as! SkillCycleView
             circleView.move(circleView.toEnd, animated: true)
         }
     }
@@ -149,7 +149,7 @@ class SkillViewController: ExperienceDetailViewController {
         self.addCircleView(140, color: UIColor.customRedColor(), width: 3,toEnd : 0.4)
         self.addCircleView(120, color: UIColor.customYellowColor(), width: 3,toEnd : 0.75)
         for view in self.circleViewArray{
-            self.view.addSubview(view as SkillCycleView)
+            self.view.addSubview(view as! SkillCycleView)
         }
     }
     
@@ -164,6 +164,10 @@ class SkillViewController: ExperienceDetailViewController {
         }
         
         self.circleViewArray.addObject(circleView)
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true;
     }
 
 }

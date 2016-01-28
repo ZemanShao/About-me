@@ -23,19 +23,19 @@ class ExperiencePresentingAnimator: NSObject,UIViewControllerAnimatedTransitioni
         
         let toView = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!.view
         if CGSizeEqualToSize(UIScreen.mainScreen().bounds.size, CGSizeMake(320, 480)){
-            toView.frame = CGRectMake(0, 0, CGRectGetWidth(transitionContext.containerView().bounds)-50,CGRectGetHeight(transitionContext.containerView().bounds) - 100)
+            toView.frame = CGRectMake(0, 0, CGRectGetWidth(transitionContext.containerView()!.bounds)-50,CGRectGetHeight(transitionContext.containerView()!.bounds) - 100)
         }
         else{
-            toView.frame = CGRectMake(0, 0, CGRectGetWidth(transitionContext.containerView().bounds)-50,CGRectGetHeight(transitionContext.containerView().bounds) - 200)
+            toView.frame = CGRectMake(0, 0, CGRectGetWidth(transitionContext.containerView()!.bounds)-50,CGRectGetHeight(transitionContext.containerView()!.bounds) - 200)
         }
 
-        toView.center = CGPointMake(-transitionContext.containerView().center.x, transitionContext.containerView().center.y)
+        toView.center = CGPointMake(-transitionContext.containerView()!.center.x, transitionContext.containerView()!.center.y)
         
-        transitionContext.containerView().addSubview(toView)
-        transitionContext.containerView().insertSubview(dimmingView, atIndex: 0);
+        transitionContext.containerView()!.addSubview(toView)
+        transitionContext.containerView()!.insertSubview(dimmingView, atIndex: 0);
         
         let positionAnimation = POPSpringAnimation(propertyNamed: kPOPLayerPositionX)
-        positionAnimation.toValue = transitionContext.containerView().center.x
+        positionAnimation.toValue = transitionContext.containerView()!.center.x
         
         positionAnimation.springBounciness = 10
         positionAnimation.completionBlock = {(anim : POPAnimation?,finished : Bool) in transitionContext.completeTransition(true)}
@@ -57,7 +57,7 @@ class ExperiencePresentingAnimator: NSObject,UIViewControllerAnimatedTransitioni
     }
     
     
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return 0.5;
     }
 }

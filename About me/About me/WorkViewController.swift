@@ -10,4 +10,7 @@ import UIKit
 
 class WorkViewController: ExperienceDetailViewController {
 
+    override func prefersStatusBarHidden() -> Bool {
+        return true;
+    }
 }
