@@ -40,7 +40,7 @@ class ExperienceTableViewController: UITableViewController,UIViewControllerTrans
         self.presentViewController(vc, animated: true, completion: nil)
     }
     @IBAction func fifthRowButtonPressed(sender: AnyObject) {
-        var vc = FultureViewController()
+        let vc = FultureViewController()
         vc.transitioningDelegate = self;
         vc.modalPresentationStyle = UIModalPresentationStyle.Custom
         self.presentViewController(vc, animated: true, completion: nil)

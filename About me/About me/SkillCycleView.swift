@@ -59,7 +59,7 @@ class SkillCycleView: UIView {
     }
     
     private func animateToStrokeEnd(strokeEnd:CGFloat){
-        var strokeAnimation = POPSpringAnimation(propertyNamed: kPOPShapeLayerStrokeEnd)
+        let strokeAnimation = POPSpringAnimation(propertyNamed: kPOPShapeLayerStrokeEnd)
         strokeAnimation.toValue = strokeEnd
         strokeAnimation.springSpeed = 0
         strokeAnimation.springBounciness = 4

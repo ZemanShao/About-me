@@ -50,7 +50,7 @@ class ClubTableViewController: UITableViewController {
     
     func configureImageView(){
         for(var i = 0; i < 16; i++){
-            var imageName = "club_icon_\(i)"
+            let imageName = "club_icon_\(i)"
             self.iconImageViewArray.addObject(UIImageView(image: UIImage(named: imageName)))
         }
         

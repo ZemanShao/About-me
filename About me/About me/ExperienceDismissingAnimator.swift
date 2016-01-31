@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ExperienceDismissingAnimator: NSObject, UIViewControllerAnimatedTransitioning{
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         let toVC = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!

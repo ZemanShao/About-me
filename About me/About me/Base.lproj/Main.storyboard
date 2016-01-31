@@ -284,6 +284,70 @@
             </objects>
             <point key="canvasLocation" x="1393" y="1257"/>
         </scene>
+        <!--Experience Content Table View Controller-->
+        <scene sceneID="fPO-HN-13l">
+            <objects>
+                <tableViewController id="1GX-Ug-tGS" customClass="ExperienceContentTableViewController" customModule="Zeman" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="28" sectionFooterHeight="28" id="IqO-Rh-fCz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="489"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExperienceTableViewCell" rowHeight="80" id="jhP-pJ-ywl" customClass="ExperienceTableViewCell" customModule="Zeman" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jhP-pJ-ywl" id="F96-6g-dxo">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tongji University" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXw-kG-GEX">
+                                            <rect key="frame" x="8" y="8" width="398" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Undergraduate in Software Engineering" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8z-rF-ZXw">
+                                            <rect key="frame" x="8" y="30" width="398" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leader of Tongji Apple Club" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouu-Ez-dvp">
+                                            <rect key="frame" x="8" y="51" width="398" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="B8z-rF-ZXw" firstAttribute="top" secondItem="aXw-kG-GEX" secondAttribute="bottom" constant="2" id="15b-yI-2Ew"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="ouu-Ez-dvp" secondAttribute="leading" id="6Bw-GV-Few"/>
+                                        <constraint firstItem="ouu-Ez-dvp" firstAttribute="top" secondItem="B8z-rF-ZXw" secondAttribute="bottom" constant="4" id="DBO-33-Lui"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="B8z-rF-ZXw" secondAttribute="trailing" id="OpN-9g-Lh5"/>
+                                        <constraint firstAttribute="topMargin" secondItem="aXw-kG-GEX" secondAttribute="top" id="Sxf-Fe-rHa"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ouu-Ez-dvp" secondAttribute="trailing" id="U3U-w7-JN8"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="B8z-rF-ZXw" secondAttribute="leading" id="ZZg-TV-7Cx"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="aXw-kG-GEX" secondAttribute="leading" id="sZa-Oz-MMg"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="aXw-kG-GEX" secondAttribute="trailing" id="vXi-A8-2xE"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="ouu-Ez-dvp" id="l8s-Nn-F0T"/>
+                                    <outlet property="subtitleLabel" destination="B8z-rF-ZXw" id="3fa-Z0-OGj"/>
+                                    <outlet property="titleLabel" destination="aXw-kG-GEX" id="tPm-pE-Vpc"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1GX-Ug-tGS" id="9xf-Ka-IWT"/>
+                            <outlet property="delegate" destination="1GX-Ug-tGS" id="tb2-Bc-9e1"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3sI-Ei-Gp0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1510" y="-377.5"/>
+        </scene>
         <!--Experience Table View Controller-->
         <scene sceneID="XUK-8Q-pZ7">
             <objects>
@@ -669,7 +733,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="slA-cd-5Av">
                                 <rect key="frame" x="0.0" y="247" width="414" height="489"/>
                                 <connections>
-                                    <segue destination="rJ0-d4-QiS" kind="embed" id="Z0c-D4-t4w"/>
+                                    <segue destination="1GX-Ug-tGS" kind="embed" id="mF6-jU-8GR"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tXt-E2-fB8">

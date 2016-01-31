@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BFB7AAA6A7B723ECCF8AEA2C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6698F2AB53BDA1EB96490743 /* libPods.a */; };
+		3545C53EB27A8234E486819B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6B134F80F117AC78E68FD2 /* Pods.framework */; };
 		D8281AA41AEDA60A0005D621 /* Work_Video.m4v in Resources */ = {isa = PBXBuildFile; fileRef = D8281AA31AEDA60A0005D621 /* Work_Video.m4v */; };
 		D85EC75E1A5E835300EDE90B /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85EC75D1A5E835300EDE90B /* SkillViewController.swift */; };
 		D85EC7601A5E839E00EDE90B /* SkillCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85EC75F1A5E839E00EDE90B /* SkillCycleView.swift */; };
+		D8801CDB1C5A5FE600B3E353 /* ExperienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8801CD91C5A5FE600B3E353 /* ExperienceTableViewCell.swift */; };
+		D8801CDE1C5A626E00B3E353 /* ExperienceContentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8801CDD1C5A626E00B3E353 /* ExperienceContentTableViewController.swift */; };
+		D8A43EAB1C5E3D9F00DD7F0A /* AMExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A43EAA1C5E3D9F00DD7F0A /* AMExperience.swift */; };
 		D8A6A2951AEBB53C003FD079 /* ExperienceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A6A2941AEBB53C003FD079 /* ExperienceTableViewController.swift */; };
 		D8A6A2C41AEBD5FF003FD079 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A6A2C11AEBD5FF003FD079 /* FBShimmeringLayer.m */; };
 		D8A6A2C51AEBD5FF003FD079 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A6A2C31AEBD5FF003FD079 /* FBShimmeringView.m */; };
@@ -36,10 +39,13 @@
 
 /* Begin PBXFileReference section */
 		43466331EF7A1BA4339930DB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		6698F2AB53BDA1EB96490743 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A6B134F80F117AC78E68FD2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8281AA31AEDA60A0005D621 /* Work_Video.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Work_Video.m4v; sourceTree = "<group>"; };
 		D85EC75D1A5E835300EDE90B /* SkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
 		D85EC75F1A5E839E00EDE90B /* SkillCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCycleView.swift; sourceTree = "<group>"; };
+		D8801CD91C5A5FE600B3E353 /* ExperienceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewCell.swift; sourceTree = "<group>"; };
+		D8801CDD1C5A626E00B3E353 /* ExperienceContentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceContentTableViewController.swift; sourceTree = "<group>"; };
+		D8A43EAA1C5E3D9F00DD7F0A /* AMExperience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMExperience.swift; sourceTree = "<group>"; };
 		D8A6A2941AEBB53C003FD079 /* ExperienceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewController.swift; sourceTree = "<group>"; };
 		D8A6A2BF1AEBD5FF003FD079 /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmering.h; sourceTree = "<group>"; };
 		D8A6A2C01AEBD5FF003FD079 /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringLayer.h; sourceTree = "<group>"; };
@@ -79,7 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8E6E5DD1AED8443005086A0 /* MediaPlayer.framework in Frameworks */,
-				BFB7AAA6A7B723ECCF8AEA2C /* libPods.a in Frameworks */,
+				3545C53EB27A8234E486819B /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +109,6 @@
 				D8F00E631AED66AA007E56FB /* Work */,
 				D8F00E5E1AED408A007E56FB /* Club */,
 				D8F00E5B1AED337B007E56FB /* Util */,
-				D8A6A2BC1AEBD5F7003FD079 /* Lib */,
 				D8A6A2931AEBB520003FD079 /* Experience */,
 				D85EC75C1A5E831700EDE90B /* Skill */,
 			);
@@ -119,6 +124,37 @@
 			name = Skill;
 			sourceTree = "<group>";
 		};
+		D8801CD71C5A5F9B00B3E353 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8801CD81C5A5FAD00B3E353 /* Experience */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D8801CD81C5A5FAD00B3E353 /* Experience */ = {
+			isa = PBXGroup;
+			children = (
+				D8801CD91C5A5FE600B3E353 /* ExperienceTableViewCell.swift */,
+			);
+			name = Experience;
+			sourceTree = "<group>";
+		};
+		D8A43EA81C5E3D6A00DD7F0A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		D8A43EA91C5E3D7D00DD7F0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8A43EAA1C5E3D9F00DD7F0A /* AMExperience.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		D8A6A2931AEBB520003FD079 /* Experience */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +163,7 @@
 				D8A6A2DB1AECA30F003FD079 /* ExperienceDetailViewController.swift */,
 				D8A6A2DD1AECA604003FD079 /* ExperiencePresentingAnimator.swift */,
 				D8F00E591AECEEEA007E56FB /* ExperienceDismissingAnimator.swift */,
+				D8801CDD1C5A626E00B3E353 /* ExperienceContentTableViewController.swift */,
 			);
 			name = Experience;
 			sourceTree = "<group>";
@@ -216,6 +253,10 @@
 		D8F8DB501A4566FC006C63A9 /* About me */ = {
 			isa = PBXGroup;
 			children = (
+				D8A43EA91C5E3D7D00DD7F0A /* Model */,
+				D8A43EA81C5E3D6A00DD7F0A /* Network */,
+				D8801CD71C5A5F9B00B3E353 /* View */,
+				D8A6A2BC1AEBD5F7003FD079 /* Lib */,
 				D85EC7591A5E82F200EDE90B /* ViewControllers */,
 				D8F8DB531A4566FC006C63A9 /* AppDelegate.swift */,
 				D8F8DB5A1A4566FC006C63A9 /* Main.storyboard */,
@@ -259,7 +300,7 @@
 			children = (
 				D8E6E5DB1AED83A3005086A0 /* AVFoundation.framework */,
 				D8F00E6F1AED7FCC007E56FB /* MediaPlayer.framework */,
-				6698F2AB53BDA1EB96490743 /* libPods.a */,
+				5A6B134F80F117AC78E68FD2 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -276,6 +317,7 @@
 				D8F8DB4B1A4566FC006C63A9 /* Frameworks */,
 				D8F8DB4C1A4566FC006C63A9 /* Resources */,
 				46E59E0E02AC487864C48EDD /* Copy Pods Resources */,
+				3F9CF876D179FC04B7EF2BB6 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,6 +376,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3F9CF876D179FC04B7EF2BB6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		46E59E0E02AC487864C48EDD /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -375,9 +432,11 @@
 				D8A6A2DC1AECA30F003FD079 /* ExperienceDetailViewController.swift in Sources */,
 				D8F00E5D1AED345C007E56FB /* UIColor+CustomColor.swift in Sources */,
 				D8F8DB571A4566FC006C63A9 /* About_me.xcdatamodeld in Sources */,
+				D8801CDE1C5A626E00B3E353 /* ExperienceContentTableViewController.swift in Sources */,
 				D8A6A2C71AEBD6A0003FD079 /* ExperienceViewController.swift in Sources */,
 				D8F00E621AED440C007E56FB /* ClubTableViewController.swift in Sources */,
 				D8E6E5E01AED8C73005086A0 /* FultureViewController.swift in Sources */,
+				D8801CDB1C5A5FE600B3E353 /* ExperienceTableViewCell.swift in Sources */,
 				D8A6A2951AEBB53C003FD079 /* ExperienceTableViewController.swift in Sources */,
 				D8F00E651AED6703007E56FB /* WorkViewController.swift in Sources */,
 				D85EC75E1A5E835300EDE90B /* SkillViewController.swift in Sources */,
@@ -388,6 +447,7 @@
 				D85EC7601A5E839E00EDE90B /* SkillCycleView.swift in Sources */,
 				D8A6A2C41AEBD5FF003FD079 /* FBShimmeringLayer.m in Sources */,
 				D8A6A2C51AEBD5FF003FD079 /* FBShimmeringView.m in Sources */,
+				D8A43EAB1C5E3D9F00DD7F0A /* AMExperience.swift in Sources */,
 				D8F00E671AED6726007E56FB /* WorkTableViewController.swift in Sources */,
 				D8A6A2DE1AECA604003FD079 /* ExperiencePresentingAnimator.swift in Sources */,
 			);
@@ -449,6 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "Pods/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -485,6 +546,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "Pods/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
