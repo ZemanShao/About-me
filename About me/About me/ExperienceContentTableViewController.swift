@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import Alamofire
 
 class ExperienceContentTableViewController: UITableViewController {
-
+    
+    let apiUrl = "http://104.131.134.56/me/getallexps.php"
+    var expArray = Array<AMExperience>()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +23,29 @@ class ExperienceContentTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        Alamofire.request(.GET, apiUrl)
+            .responseJSON { response in
+                switch response.result{
+                case .Success(let JSON):
+                    let responseDic = JSON as! Dictionary<String,Array<Dictionary<String,String>>>
+                    self.expArray.removeAll()
+                    for expDic in responseDic["exps"]!{
+                        let exp = AMExperience(dic: expDic)
+                        self.expArray.append(exp)
+                    }
+                    self.tableView.reloadData()
+
+                    
+                    
+                    
+                case .Failure(let error):
+                        print(error)
+                    
+                    
+                }
+        }
+
         
     }
 
@@ -35,16 +63,28 @@ class ExperienceContentTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        if !expArray.isEmpty {
+            return expArray.count
+        }
+        else {
+            return 0
+        }
     }
 
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentifier = "ExperienceTableViewCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ExperienceTableViewCell
-        if (indexPath.row % 2 != 0){
+        if indexPath.row % 2 != 0 {
             cell.toRight()
         }
+        if !expArray.isEmpty {
+            let exp = expArray[indexPath.row]
+            cell.titleLabel.text = exp.title
+            cell.subtitleLabel.text = exp.subtitle
+            cell.descriptionLabel.text = exp.descript
+        }
+        
         
 
         return cell
