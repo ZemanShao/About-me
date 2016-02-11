@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class ExperienceContentTableViewController: UITableViewController {
+class ExperienceContentTableViewController: UITableViewController,UIViewControllerTransitioningDelegate {
     
     let apiUrl = "http://104.131.134.56/me/getallexps.php"
     var expArray = Array<AMExperience>()
@@ -90,7 +90,35 @@ class ExperienceContentTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 
+        var vc: UIViewController
+        if indexPath.row == 0 {
+            vc = SkillViewController()
+            
+        }
+        else if indexPath.row == 1{
+            vc = self.storyboard?.instantiateViewControllerWithIdentifier("ClubViewController") as! ClubViewController
+        }
+        else{
+            vc = SkillViewController()
+        }
+
+        vc.transitioningDelegate = self
+        vc.modalPresentationStyle = UIModalPresentationStyle.Custom
+        self.presentViewController(vc, animated: true, completion: nil)
+        
+    }
+    
+    // MARK: - Transitioning Delegate
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return ExperiencePresentingAnimator()
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return ExperienceDismissingAnimator()
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
