@@ -9,10 +9,17 @@
 import UIKit
 
 class ExperienceDetailViewController: UIViewController {
-
+    
+    var contentViewController : UIViewController?
+    var contentView : UIView?
+    
+    var contentStr : String?
+    var imageUrl : String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
+        configureContentView()
         
         
     }
@@ -26,6 +33,26 @@ class ExperienceDetailViewController: UIViewController {
         self.view.layer.shadowOffset = CGSizeMake(1, 1)
         self.view.layer.shadowOpacity = 0.5
         self.view.layer.shadowRadius = 1.0
+    }
+    
+    func configureContentView(){
+        if let vc = contentViewController {
+            self.addChildViewController(vc)
+            vc.view.frame = CGRectMake(10, 10, self.view.frame.width-20, self.view.frame.height-20)
+            self.view.addSubview(vc.view)
+        }
+        else{
+            
+            let contentView = MMParallaxPresenter()
+            contentView.frame = CGRectMake(10, 10, self.view.frame.width-70, self.view.frame.height-220)
+            
+            let page = MMParallaxPage(scrollFrame: contentView.frame, withHeaderHeight: 150, andContentText: contentStr!)
+            
+            page.headerView.addSubview(UIImageView(image: UIImage(named: "Cool_robot")))
+            contentView.addParallaxPage(page)
+            self.view.addSubview(contentView)
+        }
+        
     }
     
     

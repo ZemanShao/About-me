@@ -13,6 +13,8 @@
 		D85EC7601A5E839E00EDE90B /* SkillCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85EC75F1A5E839E00EDE90B /* SkillCycleView.swift */; };
 		D8801CDB1C5A5FE600B3E353 /* ExperienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8801CD91C5A5FE600B3E353 /* ExperienceTableViewCell.swift */; };
 		D8801CDE1C5A626E00B3E353 /* ExperienceContentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8801CDD1C5A626E00B3E353 /* ExperienceContentTableViewController.swift */; };
+		D883AD131C6CD15B003FD059 /* MMParallaxPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D883AD101C6CD15B003FD059 /* MMParallaxPage.m */; };
+		D883AD141C6CD15B003FD059 /* MMParallaxPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D883AD121C6CD15B003FD059 /* MMParallaxPresenter.m */; };
 		D8A43EAB1C5E3D9F00DD7F0A /* AMExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A43EAA1C5E3D9F00DD7F0A /* AMExperience.swift */; };
 		D8A6A2951AEBB53C003FD079 /* ExperienceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A6A2941AEBB53C003FD079 /* ExperienceTableViewController.swift */; };
 		D8A6A2C41AEBD5FF003FD079 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A6A2C11AEBD5FF003FD079 /* FBShimmeringLayer.m */; };
@@ -45,6 +47,10 @@
 		D85EC75F1A5E839E00EDE90B /* SkillCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCycleView.swift; sourceTree = "<group>"; };
 		D8801CD91C5A5FE600B3E353 /* ExperienceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewCell.swift; sourceTree = "<group>"; };
 		D8801CDD1C5A626E00B3E353 /* ExperienceContentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceContentTableViewController.swift; sourceTree = "<group>"; };
+		D883AD0F1C6CD15B003FD059 /* MMParallaxPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMParallaxPage.h; sourceTree = "<group>"; };
+		D883AD101C6CD15B003FD059 /* MMParallaxPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMParallaxPage.m; sourceTree = "<group>"; };
+		D883AD111C6CD15B003FD059 /* MMParallaxPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMParallaxPresenter.h; sourceTree = "<group>"; };
+		D883AD121C6CD15B003FD059 /* MMParallaxPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMParallaxPresenter.m; sourceTree = "<group>"; };
 		D8A43EAA1C5E3D9F00DD7F0A /* AMExperience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMExperience.swift; sourceTree = "<group>"; };
 		D8A6A2941AEBB53C003FD079 /* ExperienceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewController.swift; sourceTree = "<group>"; };
 		D8A6A2BF1AEBD5FF003FD079 /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmering.h; sourceTree = "<group>"; };
@@ -140,6 +146,18 @@
 			name = Experience;
 			sourceTree = "<group>";
 		};
+		D883AD0E1C6CD135003FD059 /* MMParallaxPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				D883AD0F1C6CD15B003FD059 /* MMParallaxPage.h */,
+				D883AD101C6CD15B003FD059 /* MMParallaxPage.m */,
+				D883AD111C6CD15B003FD059 /* MMParallaxPresenter.h */,
+				D883AD121C6CD15B003FD059 /* MMParallaxPresenter.m */,
+			);
+			name = MMParallaxPresenter;
+			path = FBShimmering;
+			sourceTree = "<group>";
+		};
 		D8A43EA81C5E3D6A00DD7F0A /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +189,7 @@
 		D8A6A2BC1AEBD5F7003FD079 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				D883AD0E1C6CD135003FD059 /* MMParallaxPresenter */,
 				D8A6A2BD1AEBD5FF003FD079 /* FBShimmering */,
 			);
 			name = Lib;
@@ -428,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D883AD131C6CD15B003FD059 /* MMParallaxPage.m in Sources */,
 				D8F8DB541A4566FC006C63A9 /* AppDelegate.swift in Sources */,
 				D8A6A2DC1AECA30F003FD079 /* ExperienceDetailViewController.swift in Sources */,
 				D8F00E5D1AED345C007E56FB /* UIColor+CustomColor.swift in Sources */,
@@ -442,6 +462,7 @@
 				D85EC75E1A5E835300EDE90B /* SkillViewController.swift in Sources */,
 				D8F00E5A1AECEEEA007E56FB /* ExperienceDismissingAnimator.swift in Sources */,
 				D8F00E601AED40BD007E56FB /* ClubViewController.swift in Sources */,
+				D883AD141C6CD15B003FD059 /* MMParallaxPresenter.m in Sources */,
 				D8F00E6C1AED6BA4007E56FB /* CoolViewController.swift in Sources */,
 				D8F00E6A1AED6B84007E56FB /* CoolTableViewController.swift in Sources */,
 				D85EC7601A5E839E00EDE90B /* SkillCycleView.swift in Sources */,

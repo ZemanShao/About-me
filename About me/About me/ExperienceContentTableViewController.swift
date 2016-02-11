@@ -92,7 +92,7 @@ class ExperienceContentTableViewController: UITableViewController,UIViewControll
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 
-        var vc: UIViewController
+        var vc: ExperienceDetailViewController
         if indexPath.row == 0 {
             vc = SkillViewController()
             
@@ -101,7 +101,10 @@ class ExperienceContentTableViewController: UITableViewController,UIViewControll
             vc = self.storyboard?.instantiateViewControllerWithIdentifier("ClubViewController") as! ClubViewController
         }
         else{
-            vc = SkillViewController()
+            vc = ExperienceDetailViewController()
+            vc.contentStr = expArray[indexPath.row].content
+
+            
         }
 
         vc.transitioningDelegate = self

@@ -6,3 +6,5 @@
 #import "FBShimmering/FBShimmering.h"
 #import "FBShimmering/FBShimmeringView.h"
 #import "FBShimmering/FBShimmeringLayer.h"
+#import "MMParallaxPage.h"
+#import "MMParallaxPresenter.h"
