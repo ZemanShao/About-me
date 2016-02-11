@@ -41,12 +41,12 @@ class ExperienceDetailViewController: UIViewController {
             vc.view.frame = CGRectMake(10, 10, self.view.frame.width-20, self.view.frame.height-20)
             self.view.addSubview(vc.view)
         }
-        else{
+        else if let content = contentStr{
             
             let contentView = MMParallaxPresenter()
             contentView.frame = CGRectMake(10, 10, self.view.frame.width-70, self.view.frame.height-220)
             
-            let page = MMParallaxPage(scrollFrame: contentView.frame, withHeaderHeight: 150, andContentText: contentStr!)
+            let page = MMParallaxPage(scrollFrame: contentView.frame, withHeaderHeight: 150, andContentText: content)
             
             page.headerView.addSubview(UIImageView(image: UIImage(named: "Cool_robot")))
             contentView.addParallaxPage(page)
